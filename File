@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int petrol;
+
+    printf("Engine Level Monitoring System\n");
+    printf("------------------------------\n");
+
+    for (int i = 1; i <= 5; i++)
+    {
+        printf("\nEnter petrol level of vehicle %d (in ml): ", i);
+        scanf("%d", &petrol);
+
+        if (petrol < 500)
+        {
+            printf("Warning! Low Petrol Level.\n");
+            printf("Please refill the petrol tank.\n");
+        }
+        else if (petrol <= 4000)
+        {
+            printf("Normal Vehicle Condition.\n");
+        }
+        else
+        {
+            printf("Good Vehicle Condition.\n");
+        }
+    }
+
+    return 0;
+}
